@@ -93,7 +93,7 @@ the Rails framework and it's important that you understand how to test them.
 
 ### Submit your code!
 
-Only your `index.rb` file should have changed.  Create a pull request back
+Create a pull request with the completed work from your branch.
 
 ## Resources
 
