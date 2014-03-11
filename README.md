@@ -98,9 +98,12 @@ Create a pull request with the completed work from your branch.
 
 * [Sinatra Online Documentation][Sinatra] (_less-comprehensive but direct_)
 * [Sinatra Book][Sinatra Book] (_more comprehensive, but less direct_)
+* [Sinatra Testing][sinatra-testing]
 
 [Sinatra documentation]: http://www.sinatrarb.com/intro
 [browser redirect]: http://www.sinatrarb.com/intro#Browser%20Redirect
 [handlers section]: http://sinatra-book.gittr.com/#handlers
 [Sinatra Book]: http://sinatra-book.gittr.com/
 [Sinatra]: http://www.sinatrarb.com/
+[sinatra-testing]:http://www.sinatrarb.com/testing.html
+
