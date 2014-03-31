@@ -13,7 +13,7 @@ describe "IndexController (this is a skeleton controller test!)" do
   describe 'post' do
     # Here is a sample POST test for you to study - feel free to modify for your code.
     it 'should return a response for uppercase' do
-      post '/grandma', {user_input: "HI"}
+      post '/grandma', {grandma: "HI"}
       expect(last_response.body).to include("HI")
     end
 
