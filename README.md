@@ -81,14 +81,17 @@ section][] of the [Sinatra Book][].  You'll want to redirect back to
 
 ### Release 3: Controller Testing
 
-You should be able to run `rspec` now to verify the skeleton specs.
+Now let's add a few tests to your application.  Look at the `spec/index_controller_spec.rb` file to see a sample `get` and `post` test.  You should be able to run `rspec` now to verify these test pass.
 
 ![green rspec run text](running_specs.png "Successful RSpec run")
 
-Your first challenge is to add a **controller** spec which verifies
+Your challenge is to add a **controller** spec which verifies
 that when you submit a lower-cased string that your application returns your
-humorous response.  Controller tests are one of the most heavily-used parts of
+humorous response.  If you want, add more tests to the get or post contexts.
+
+Controller tests are one of the most heavily-used parts of
 the Rails framework and it's important that you understand how to test them.
+
 
 ### Submit your code!
 

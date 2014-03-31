@@ -2,29 +2,24 @@ require 'spec_helper'
 
 describe "IndexController (this is a skeleton controller test!)" do
 
-  describe 'get all bands' do
-    it 'should see all bands' do
-      pending "You can test GET requests"
-      get "/bands"
+  describe 'get grandma' do
+    # Here is a sample GET test for you to study
+    it 'should return a response' do
+      get "/"
+      expect(last_response).to be_ok
     end
+    # Can you think of more meaningful GET tests to write?
   end
-
-  describe 'create a new band' do
-    band_name = 'chromatics'
-    new_params = {
-        name: band_name
-      }
-    new_session = {
-      'rack.session' => {
-        # Could preload stuff into the session here...
-      }
-    }
-    it 'should add a new band' do
-      pending "You can implement tests on POST requests too"
-      expect{
-        # Implement an HTTP action here
-      }.to change(Band, :count).by(1)
-      last_response.should be_ok
+  describe 'post' do
+    # Here is a sample POST test for you to study
+    it 'should return a response for uppercase' do
+      post '/grandma', {user_input: "HI"}
+      expect(last_response).body.include? ("HI")
     end
+
+    it 'should return a response for lowercase' do
+      # Write your POST test here
+    end
+
   end
 end
