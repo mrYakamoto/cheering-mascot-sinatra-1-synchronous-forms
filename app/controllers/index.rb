@@ -1,3 +1,5 @@
+
+
 get '/' do
   @sign_text = params[:sign_text]
   # Look in app/views/index.erb
@@ -5,5 +7,6 @@ get '/' do
 end
 
 post '/cheers' do
-  "We are not handling POST requests to '/cheers' the way we want to.<br>We'll need to fix this.<br><br>Here's a look at the params hash: <code>#{params.inspect}</code>"
+  cheer = Mascot.sign_for(params[:cheer_name])
+  redirect to("http://localhost:9393/?sign_text=#{cheer}")
 end
